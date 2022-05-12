@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { legacy_createStore } from "redux";
+import { legacy_createStore, applyMiddleware, compose } from "redux";
 
 import App from "./components/App";
 import reducers from "./reducers";
 
-const store = legacy_createStore(reducers);
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = legacy_createStore(reducers, composeEnhancers(applyMiddleware()));
 
 ReactDOM.render(
   <Provider store={store}>
