@@ -20,6 +20,12 @@
       "title": "My stream component reuse!",
       "description": "edit!",
       "id": 4
+    },
+    {
+      "title": "New Stream",
+      "description": "nice!",
+      "userId": "107377494602370215199",
+      "id": 5
     }
   ]
 }

@@ -7,6 +7,7 @@ import StreamList from "./streams/StreamList";
 import StreamShow from "./streams/StreamShow";
 import Header from "./Header";
 import history from "../history";
+import "../style/App.css";
 
 // OAuth ID
 // 897364719390-c98ghavh3ccvpmslori5a4i2edlu99ce.apps.googleusercontent.com
